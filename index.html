@@ -4,10 +4,208 @@
 		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
-		
-		</style>
-	</head> 
-<body> 
+            <!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Sanders Chapter 8 and 9 InClassNotes</title>
+<meta charset="utf-8">
+<style>
+          
+            
+            table {
+                border: 10px solid #0000FF;
+                
+                
+            }
+    table {margin: auto;
+    border: 5px solid #000;
+    border-spacing: 0;
+    background-color: darkgoldenrod;
+    }
+    td, th {padding: 0.5em;
+    border: 10px #0000FF;
+        text-align: center;
+        
+        
+    
+    }
+    caption {font-size: 1.2em;}
+    #wrapper {display: flex;
+              flex-direction: row;}
+    #stupers{flex: 2;}
+    #stuRating{flex: 3;}
+    #stuInfoCol1{flex: 2;}
+    #stuInfoCol2{flex: 3;}
+    input[type="radio"], input[type="checkbox"]{display: inline;}
+            
+    /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-</body> 
-</html> 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+            
+    @media only screen and (max-width: 760px) {
+        table { display: inline-table }
+    
+</style>
+</head>
+<body>
+    <h1>Ryan Sanders - Favorite Movie Page</h1>
+    <table>
+    <caption>Movie Information</caption>
+        <thead>
+        
+        <tr>
+            <th id="m">Title:</th>
+            <th id="a">Airplane!</th>
+            <th id="s">The Fantastic Mr. Fox</th>
+          
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td headers="d">Director(s):</td>
+            <td headers="director"> Jim Abrahams, David Zucker, Jerry Zucker</td>
+            <td headers="m">Wes Anderson</td>
+            
+            <tr>
+            <td headers="lam">Leading Actor:</td>
+            <td headers="rh">Robert Hays</td>
+            <td headers="m">George Clooney</td>
+            
+            </tr>
+            <tr>
+                <td headers="laf">Leading Actress:</td>
+            <td headers="m">Julia Hagerty</td>
+            <td headers="t">Meryl Streep</td>
+            
+            </tr>
+             <tr>
+                <td headers="r">Rating:</td>
+            <td headers="m">PG</td>
+            <td headers="t">PG</td>
+            
+            </tr>
+             <tr>
+                <td headers="dis">Description:</td>
+            <td headers="m">This parody of a plane crash thriller crosses <br> the world of comedy and suspence when<br>the crew of flight 209 are stricken with food<br>poisoning. Ex-pilot, Ted Striker is forced<br>to help land the plane with the help of many<br>comedic characters.<br>Surely they can land the plane...<br> but don't call him Shirley.</td>
+            <td headers="t">Mr. Fox is a smart and cunning fox who gave up<br>his life of crime for his family. Not<br>satisfied with his life, he plans one last heist<br>to set his family up for life. Mr. Fox plans to<br>outwit the local farmers, but gets more than<br>he bargains for in the process. His friends,<br>family, and neighbors nust come together to<br>make the plan come together.</td>
+            
+            </tr>
+             <tr>
+                <td headers="r">Movie Review:</td>
+            <td headers="ar"><p><a href="https://www.theguardian.com/film/2020/jul/02/airplane-film-40th-anniversary-spoof-comedy">Airplane! Review</a></p></td>
+            <td headers="t"><p><a href="https://www.theguardian.com/film/2009/oct/22/fantastic-mr-fox-review">The Fantastic Mr. Fox Review</a></p></td>
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    <h1>Movie Survey</h1>
+    <p>Required fields marked with an asterisk</p>
+    <form method="post" action="http://webdevbasics.net/scripts/demo.php"></form>
+        <div>
+            <fieldset id="basinfo"><legend>Information</legend>
+            <label for="myName">*Name</label>
+                <input type="text" name="myName" id="myName" required= "required"
+                placeholder="your first and last name">
+                <label for="myEmail">*Email:</label>
+                <input type="text" name="myEmail" id="myEmail" required="required"
+                placeholder="your@ourdomain.com">
+                
+            </fieldset>
+            
+            <fieldset id="seen"><legend>Have You Seen Either of These Films?</legend>
+                Select Status<br>
+                <input type="radio" name="seen1" id="YA" value="YesA">
+                I've Seen Airplane!<br>
+                <input type="radio" name="seen1" id="YS" value="YesS">
+                I've Seen Step Brothers<br>
+                <input type="radio" name="seen1" id="YB" value="YesB">
+                I've Seen Both Movies<br>
+                <input type="radio" name="seen1" id="BI" value="bits">
+                I've seen bits of one or both<br>
+                <input type="radio" name="seen1" id="N" value="no">
+                I haven't seen either of these movies<br>
+             
+            
+            
+                Select Organization:<br>
+                <Input type="checkbox" name="enjoy" id="oob" value="oob">
+                I enjoied one or both of these movies<br>
+                <Input type="checkbox" name="enjoy" id="neu" value="neutral">
+                I have a neutral opinion or have not seen these movies<br>
+                <Input type="checkbox" name="enjoy" id="dne" value="did not enjoy">
+                I did not enjoy one or both of these movies<br>
+                <Input type="checkbox" name="enjoy" id="ooo" value="one or other">
+                I enjoyed one of the movies, but not the other<br>
+                <Input type="checkbox" name="enjoy" id="obns" value="one but not seen">
+                I enjoyed one, but have not seen the other<br>
+            
+                 </fieldset>
+                    
+                    <fieldset id="watchagain"><legend>Watch Again</legend>
+                    Would you watch these movies again? <br>
+                    <div class="dropdown">
+  <button class="dropbtn">Click to Select</button>
+  <div class="dropdown-content">
+    <a href="#">Yes</a>
+    <a href="#">No</a>
+    <a href="#">Maybe</a>
+      <a href="#">No Opinion</a>
+  </div>
+</div>
+            </select>
+                    
+                    </fieldset>
+                    
+                        <input id="myReset" type="reset" value="Reset">
+                        <input id="mySubmit" type="submit" value="Submit">
+                    
+                    </fieldset>
+                    
+        </div>
+                    <p>2021 Ryan Sanders - s533882@nwmissouri.edu</p>
+</body>
+</html>
+		
+		
+	
+
